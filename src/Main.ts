@@ -1,5 +1,6 @@
 import {Camion} from "./Camion";
-//import Camion = require("Camion");
+
+import "./style.css";//importo css
 
 /** @description Esta CLase representa por donde inicia el programa,"llamada Main",su metodo es estatico y se inicia sin instanciar la clase".
  */

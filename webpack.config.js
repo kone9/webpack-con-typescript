@@ -8,11 +8,18 @@ module.exports =
     devtool: 'eval-source-map',
     entry: './src/Main.ts',
     module:{
-        rules:[{
-            test:/\.ts$/,
-            use: 'ts-loader',
-            include:[path.resolve(__dirname,'src')]
-        }]
+        rules:[
+            {
+                test:/\.ts$/,
+                use: 'ts-loader',
+                include:[path.resolve(__dirname,'src')]
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            }
+        ]
+        
     },
     output:{
         publicPath:'public',
