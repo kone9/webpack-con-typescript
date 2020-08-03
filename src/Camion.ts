@@ -7,6 +7,7 @@ export class Camion extends Vehiculo{
 
     constructor(color: string,marca: string,velocidadMaxima: number,precio: number) {
         super(color,marca,velocidadMaxima,precio);
+        
     }
 
     public get tieneAcoplado(): boolean {

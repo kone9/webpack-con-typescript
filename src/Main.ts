@@ -12,7 +12,7 @@ class Main
         let camion = new Camion("rojo","mercedes",130,100000);
         
         htmlElemento = document.getElementById("texto2") as HTMLElement;
-        htmlElemento.textContent = "Caracteristicas del camion:" + " COLOR: " + camion.color + " MARCA: " + camion.marca + " PRESIO:" + camion.precio;
+        htmlElemento.textContent = "Caracteristicas del camion:" + " COLOR: " + camion.color + " MARCA: " + camion.marca + " PRECIO: $" + camion.precio;
         
 
         console.log(camion.soyUnCamion());

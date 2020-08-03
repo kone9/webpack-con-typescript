@@ -3,6 +3,9 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports =
 {
+    mode:'development',//eleguir si quiero modo desarrollo para poder mirar el código
+    //mode:'production',//o modo producción para no ver el código
+    devtool: 'eval-source-map',
     entry: './src/Main.ts',
     module:{
         rules:[{
