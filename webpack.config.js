@@ -17,6 +17,9 @@ module.exports =
             {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
+            },
+            {
+                exclude: /node_modules/ //para exclui la carpeta modules en el compilado
             }
         ]
         
